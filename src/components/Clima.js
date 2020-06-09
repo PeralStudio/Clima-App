@@ -38,7 +38,7 @@ const Clima =({resultado}) => {
     )
 }
 
-Clima.ropTypes = {
+Clima.propTypes = {
     resultado: PropTypes.object.isRequired
 }
 
