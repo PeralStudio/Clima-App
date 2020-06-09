@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Clima =({resultado}) => {
 
     //extraer los avlores
-    const { name, main}= resultado;
+    const { name, main, wind}= resultado;
 
     if (!name) return(false);
 
@@ -17,13 +17,22 @@ const Clima =({resultado}) => {
         <div className="card-panel white col s12">
             <h2>La Temperatura de {name} es: </h2>
             <p className="temperatura">
-                {parseFloat (main.temp - kelvin, 10).toFixed(1)}<span>&#x2103;</span>
+                {parseFloat (main.feels_like - kelvin, 10).toFixed(1)}<span>&#x2103;</span>
             </p>
-            <p>Temperatura Máxima:
+            <p>Sensación Termica:&nbsp;
                 {parseFloat (main.temp_max - kelvin, 10).toFixed(1)} <span>&#x2103;</span>
             </p>
-            <p>Temperatura Minima:
+            <p>Temperatura Máxima:&nbsp;
+                {parseFloat (main.temp_max - kelvin, 10).toFixed(1)} <span>&#x2103;</span>
+            </p>
+            <p>Temperatura Minima:&nbsp;
                 {parseFloat (main.temp_min - kelvin, 10).toFixed(1)} <span> &#x2103;</span>
+            </p>
+            <p>Humedad:&nbsp;
+                {(main.humidity)}<span>&nbsp;%</span>
+            </p>
+            <p>Viento:&nbsp;
+                {(wind.speed)}<span>&nbsp;m/s</span>
             </p>
         </div>
     )
