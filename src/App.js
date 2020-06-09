@@ -17,7 +17,7 @@ function App() {
 
     const [consultar, guardarConsultar] = useState (false);
     const [resultado, guardarResultado] = useState ({});
-    const [error, guardarError] = useState(false);
+    const [error, guardarError] = useState(false); 
 
     const {ciudad, pais} = busqueda;
 
