@@ -7,6 +7,7 @@ import Error from './components/Error';
 
 function App() {
 
+
       // state del formulario
 
       const [busqueda, guardarBusqueda] = useState({

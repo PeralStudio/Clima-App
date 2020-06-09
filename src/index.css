@@ -70,6 +70,11 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   vertical-align: super;
 }
 
+.icono {
+  
+  vertical-align: center;
+}
+
 .btn-block {
   display: block!important;
 }
