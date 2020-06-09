@@ -11,6 +11,8 @@ const Clima =({resultado}) => {
     //grados kelvin
     const kelvin = 273.15;
 
+    //coger icono del tiempo
+
     var icon = "https://openweathermap.org/img/w/" + resultado.weather[0].icon + ".png"
 
 console.log (icon)
