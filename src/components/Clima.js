@@ -17,10 +17,10 @@ const Clima =({resultado}) => {
         <div className="card-panel white col s12">
             <h2>La Temperatura de {name} es: </h2>
             <p className="temperatura">
-                {parseFloat (main.feels_like - kelvin, 10).toFixed(1)}<span>&#x2103;</span>
+                {parseFloat (main.temp - kelvin, 10).toFixed(1)}<span>&#x2103;</span>
             </p>
             <p>Sensación Termica:&nbsp;
-                {parseFloat (main.temp_max - kelvin, 10).toFixed(1)} <span>&#x2103;</span>
+                {parseFloat (main.feels_like - kelvin, 10).toFixed(1)} <span>&#x2103;</span>
             </p>
             <p>Temperatura Máxima:&nbsp;
                 {parseFloat (main.temp_max - kelvin, 10).toFixed(1)} <span>&#x2103;</span>
