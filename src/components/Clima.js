@@ -16,7 +16,7 @@ const Clima =({resultado}) => {
     var icon = "https://openweathermap.org/img/w/" + resultado.weather[0].icon + ".png"
 
 console.log (icon)
-    return (
+    return ( 
 
         <div className="card-panel white col s12">
             <h2>La Temperatura de {name} es: </h2>
