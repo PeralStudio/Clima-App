@@ -1,6 +1,6 @@
 {
-  "short_name": "Clima React App",
-  "name": "Clima React App",
+  "short_name": "Clima React App - El clima de tu Ciudad",
+  "name": "Clima React App - El clima de tu Ciudad",
   "icons": [
     {
       "src": "favicon.ico",
