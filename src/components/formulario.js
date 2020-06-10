@@ -54,7 +54,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
                     id="ciudad"
                     value={ciudad}
                     
-                    onChange={handleChange}
+                    onChange={handleChange} 
 
                 />
                 <label htmlFor="ciudad">Ciudad:</label>
