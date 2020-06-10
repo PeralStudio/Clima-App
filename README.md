@@ -4,7 +4,7 @@
 
 ![Design preview for Clima App React](./design/sample2.png)
 
-# Installation
+# Installation 
 
 `npm install`
 
