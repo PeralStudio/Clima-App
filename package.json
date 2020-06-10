@@ -1,7 +1,10 @@
 {
   "name": "clima",
   "version": "1.0.0",
+  "private": true,
   "description": "Clima App creado por Alberto Peral",
+  "homepage": "https://peralstudio.github.io/Clima-App/",
+
 
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
