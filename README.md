@@ -1,4 +1,4 @@
-# Frontend Mentor - Clima App React
+# Frontend- Clima App React
 
 ![Design preview for Clima App React](./src/design/sample1.png)
 
