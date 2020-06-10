@@ -1,7 +1,9 @@
 {
   "name": "clima",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Clima App creado por Alberto Peral",
+  "main": "index.js",
+
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -11,6 +13,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "author": "Alberto Peral",
     "start": "react-scripts start", 
     "build": "react-scripts build",
     "test": "react-scripts test",
