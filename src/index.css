@@ -2,43 +2,44 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #03a9f4; 
+  background-color: #2d2e30; 
   
 }
 nav .brand-logo {
   display: block;
   text-align: center;
   position: relative;
+  color: #2d2e30;
 }
 .input-field label {
   color: white;
 }
 
 .input-field input[type=text]:focus + label {
-  color: white;
+  color: #009688;
 } 
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #009688;
   box-shadow: 0 1px 0 0 #000; 
 }
 
 input[type=text]:not(.browser-default) {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #009688;
   color: white;
 }
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid white;
-  -webkit-box-shadow: 0 1px 0 0 white;
-  box-shadow: 0 1px 0 0 white;
+  border-bottom: 1px solid #009688;
+  -webkit-box-shadow: 0 1px 0 0 #009688;
+  box-shadow: 0 1px 0 0 #009688;
 }
 input[type=text]:not(.browser-default):focus:not([readonly]) + label {
-  color: white;
+  color: #009688;
 }
 
 .contenedor-form {
   padding: 3rem 0 1px 0;
-  background-color: #03a9f4;
+  background-color: #2d2e30;
 }
 .mensaje {
   text-align: center;
@@ -49,7 +50,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
 }
 .error {
   padding: 1rem!important;
-  color:white;
+  color:#009688;
   margin-top: 3rem;
   text-align: center;
   text-emphasis: left;

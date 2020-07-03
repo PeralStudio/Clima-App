@@ -86,7 +86,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
                 <input
                     type="submit"
                     value="Buscar clima"
-                    className="waves-effect waves-light btn-large btn-block yellow accent-4"
+                    className="waves-effect waves-light btn-large btn-block teal"
                 />
 
             </div>

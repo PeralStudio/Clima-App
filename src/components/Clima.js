@@ -18,7 +18,7 @@ const Clima =({resultado}) => {
 console.log (icon)
     return ( 
 
-        <div className="card-panel white col s12">
+        <div className="card-panel grey lighten-2 col s12">
             <h2>La Temperatura de {name} es: </h2>
             <p className="temperatura">
             <img className="icono" alt="icono"src={icon}/> {parseFloat (main.temp - kelvin, 10).toFixed(1)}<span>&#x2103;</span>
