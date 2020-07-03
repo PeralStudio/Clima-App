@@ -55,13 +55,20 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   text-align: center;
   text-emphasis: left;
 }
+
+.card-panel {
+  background-image: url("https://fotos.subefotos.com/bc4f42f26e3001021a9041b548b43093o.png");
+}
+
 .card-panel h2 {
   font-size: 1.6rem;
   text-align: center;
+  color: white;
 }
 .card-panel p {
   text-align: center;
   font-size: 1.4rem;
+  color: #FFF;
 }
 .temperatura {
   font-size: 4rem!important

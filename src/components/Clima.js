@@ -15,7 +15,7 @@ const Clima =({resultado}) => {
 
     var icon = "https://openweathermap.org/img/w/" + resultado.weather[0].icon + ".png"
 
-console.log (icon)
+
     return ( 
 
         <div className="card-panel grey lighten-2 col s12">
