@@ -1,8 +1,8 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Error from './Error'
 import PropTypes from 'prop-types';
 
-const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
+const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
 
 
 
@@ -19,7 +19,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
         //actualizar el state
         guardarBusqueda({
             ...busqueda,
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         });
     }
 
@@ -29,7 +29,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
         e.preventDefault();
 
         //validar
-        if(ciudad.trim() === '' || pais.trim() === '') {
+        if (ciudad.trim() === '' || pais.trim() === '') {
             guardarError(true);
             return;
         }
@@ -39,22 +39,22 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
 
         guardarConsultar(true);
     }
-    
+
     return (
         <form
             onSubmit={handleSubmit}
         >
-            {error ? <Error mensaje="Es necesario rellenar ambos campos"/> : null}
+            {error ? <Error mensaje="Es necesario rellenar ambos campos" /> : null}
 
             <div className="input-field col s12">
-            
+
                 <input
                     type="text"
                     name="ciudad"
                     id="ciudad"
                     value={ciudad}
-                    
-                    onChange={handleChange} 
+
+                    onChange={handleChange}
 
                 />
                 <label htmlFor="ciudad">Ciudad:</label>
@@ -91,7 +91,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
 
             </div>
         </form>
-     );
+    );
 }
 
 Formulario.propTypes = {

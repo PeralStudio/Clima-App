@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({titulo}) => {
+const Header = ({ titulo }) => {
 
     return (
         <nav>
             <div className="nav-wrapper teal">
-                <a href="#!" className= "brand-logo">{titulo}</a>
+                <a href="#!" className="brand-logo">{titulo}</a>
 
             </div>
         </nav>
