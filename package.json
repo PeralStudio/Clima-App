@@ -10,59 +10,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "concurrently": "^7.6.0",
-    "electron": "^22.0.0",
-    "electron-forge": "^5.2.4",
-    "electron-is-dev": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-pages-cli": "^1.0.0",
     "react-scripts": "3.4.1",
-    "react-speed-dial": "^0.5.2",
-    "wait-on": "^7.0.1"
+    "react-speed-dial": "^0.5.2"
   },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "stock_trading_app"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin",
-            "linux",
-            "win32"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
-  },
-  "main": "main.js",
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject",
-    "electron": "electron .",
-    "package": "react-scripts build && electron-forge package",
-    "make-mac": "react-scripts build && electron-forge make --platform darwin",
-    "make-linux": "react-scripts build && electron-forge make --platform linux",
-    "make": "react-scripts build && electron-forge make"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
